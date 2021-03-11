@@ -10,7 +10,7 @@ import time
 
 now = datetime.datetime.utcnow()
 ten_minutes_ago = datetime.datetime.utcnow() - datetime.timedelta(minutes = 10)
-filename = f"{ten_minutes_ago.strftime('%Y%m%d_%H%M%S'){i}_{now.strftime('%H%M%S')}"
+filename = f"{ten_minutes_ago.strftime('%Y%m%d_%H%M%S')_{now.strftime('%H%M%S')}"
 
 sif_now = calendar.timegm(now.timetuple())
 sif_last_hour = calendar.timegm(ten_minutes_ago.timetuple())
